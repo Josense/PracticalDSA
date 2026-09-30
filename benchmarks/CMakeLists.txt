@@ -17,7 +17,9 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(google_benchmark)
 
 # Define the executable
-add_executable(dsa_bench main.cpp)
+add_executable(dsa_bench src/main.cpp
+#        src/test.cpp
+        src/iterators_vs_views.cpp)
 
 #Link the dependencies
 target_link_libraries(dsa_bench PRIVATE
