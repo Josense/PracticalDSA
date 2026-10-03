@@ -19,7 +19,9 @@ FetchContent_MakeAvailable(google_benchmark)
 # Define the executable
 add_executable(dsa_bench src/main.cpp
 #        src/test.cpp
-        src/iterators_vs_views.cpp)
+#        src/iterators_vs_views.cpp
+        src/proxy_sort.cpp
+        src/soa_zip.cpp)
 
 #Link the dependencies
 target_link_libraries(dsa_bench PRIVATE
