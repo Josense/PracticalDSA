@@ -4,7 +4,9 @@
     "name": "release",
     "binaryDir": "${sourceDir}/build/release",
     "cacheVariables": {
-      "CMAKE_BUILD_TYPE": "Release"
+      "CMAKE_BUILD_TYPE": "Release",
+      "CMAKE_C_COMPILER": "/opt/homebrew/opt/gcc/bin/gcc-16",
+      "CMAKE_CXX_COMPILER": "/opt/homebrew/opt/gcc/bin/g++-16"
     }
   }],
   "buildPresets": [{

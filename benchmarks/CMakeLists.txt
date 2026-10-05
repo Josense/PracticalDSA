@@ -22,7 +22,9 @@ add_executable(dsa_bench src/main.cpp
 #        src/iterators_vs_views.cpp
 #        src/proxy_sort.cpp
 #        src/soa_zip.cpp
-        src/async_task.cpp)
+#        src/async_task.cpp
+        src/mutex.cpp
+        src/false_sharing.cpp)
 
 #Link the dependencies
 target_link_libraries(dsa_bench PRIVATE
